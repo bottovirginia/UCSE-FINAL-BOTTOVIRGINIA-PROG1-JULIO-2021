@@ -30,7 +30,9 @@ namespace UCSE_FINAL_BOTTOVIRGINIA_PROG1_JULIO_2021
         }
 
 
-        public Envios(int codSeguieminto, int dniCliente, DateTime fechaEstEnt, string desc, enumEnvios estadoInicial, enumEventos eventoInicial, DateTime fechaEvento,
+        public List<Envios> listaEnvios { get; set; }
+        
+        public void CargarEnvio (Envios envio, int codSeguieminto, int dniCliente, DateTime fechaEstEnt, string desc, enumEnvios estadoInicial, enumEventos eventoInicial, DateTime fechaEvento,
             int dniRepartidor)
         {
             codSeguieminto = numEnvio;
@@ -41,12 +43,11 @@ namespace UCSE_FINAL_BOTTOVIRGINIA_PROG1_JULIO_2021
             eventoInicial = enumEventos.LLEGADA_AL_CENTRO_DE_DISTRIBUCION;
             fechaEvento = DateTime.Today;
             dniRepartidor = 0;
-
-
-
-
+            Envios EnvioNuevo = new Envios();
+            listaEnvios.Add(EnvioNuevo);
 
         }
+    
 
     }
 }
