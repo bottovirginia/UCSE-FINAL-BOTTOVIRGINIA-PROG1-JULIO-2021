@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace UCSE_FINAL_BOTTOVIRGINIA_PROG1_JULIO_2021
 {
-    class Empleado
+   public class Empleado: Usuarios
     {
+        public List<string> codPostales { get; set; }
     }
 }

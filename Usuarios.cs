@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace UCSE_FINAL_BOTTOVIRGINIA_PROG1_JULIO_2021
 {
-    class Destinatarios
+   public class Usuarios
     {
+        public int dniUsuarios { get; set; }
+        public string nombre { get; set; }
+        public string apellido { get; set; }
+
+        public int telefono { get; set; }
+
     }
 }
