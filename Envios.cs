@@ -13,9 +13,11 @@ namespace UCSE_FINAL_BOTTOVIRGINIA_PROG1_JULIO_2021
         public int dniRepartidor { get; set; }
         public enumEnvios estadoEnvio { get; set; }
         public DateTime fechaEstEntrega { get; set; }
+        public DateTime fechaEntrega { get; set; }
         public enumEventos historialEventos { get; set; }
         public int codigoSeguimiento { get; set; }
         public string descPaquete { get; set; }
+        public bool envioEntregado { get; set; }
 
 
 
@@ -47,7 +49,18 @@ namespace UCSE_FINAL_BOTTOVIRGINIA_PROG1_JULIO_2021
             listaEnvios.Add(EnvioNuevo);
 
         }
-    
+        public  Envios MarcarEnvioComoEntregado( int numeroEnvio)
+        {
+
+        Envios EnvioEncontrado = this.listaEnvios.First(x => x.dniDestinatario == dniDestinatario);
+
+         EnvioEncontrado.envioEntregado = true;
+            EnvioEncontrado.fechaEntrega = DateTime.Now;
+            this.listaEnvios.Add(EnvioEncontrado);
+
+
+        }
+
 
     }
 }
