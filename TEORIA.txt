@@ -1,0 +1,9 @@
+1.
+A-VERDADERO
+B- FALSO 
+C- VERDADERO
+D-FALSO
+2.
+Una expresión lambda es una subrutina definida que no está enlazada a un identificador. Pueden utilizarse tanto como para argumentos que son pasados a otras funciones de un orden superior o para construir el resultado de una función de orden superior que requiere retornar una función.
+4.
+b.	Un booleano con valor false - CORRECTA
